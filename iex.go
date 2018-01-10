@@ -51,7 +51,6 @@ func FetchRecords(symbol string, start time.Time, end time.Time) ([]ChartRecord,
 }
 
 // FetchRecordsByMillis gets data from IEX API and returns a slice of ChartRecords
-// Depricated!!!!
 func FetchRecordsByMillis(symbol string, startUnix int, endUnix int) ([]ChartRecord, error) {
 	fullRecords, err := fetch2yRecords(symbol)
 	if err != nil {
